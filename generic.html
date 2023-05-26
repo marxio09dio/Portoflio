@@ -36,6 +36,34 @@
 							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
 							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<script src="https://gist.github.com/marxio09dio/5ebc9a45fe8a2acf84f3536c17826de8.js"></script>
+							<iframe id="dynamic-iframe" title="Dash" src="https://app.powerbi.com/view?r=eyJrIjoiZjAxYmRhYjgtZDE5MC00Yjg1LTk5MjEtYTEwYjk1NjJhNDQ4IiwidCI6IjVlZWVhZDE1LTY3MmQtNDZkMS04ZjM1LTlhZGM0MDU3YmJhNiIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+							<script>
+								function resizeIframe() {
+								  var iframe = document.getElementById("dynamic-iframe");
+								  var wrapperWidth = document.getElementById("wrapper").clientWidth;
+								  var maxWidth = 1430; /* Set the maximum width here */
+								  var newWidth = Math.min(maxWidth, wrapperWidth);
+								  var newHeight = (newWidth * 0.75); /* Adjust this value to your desired aspect ratio */
+								  iframe.style.width = newWidth + "px";
+								  iframe.style.height = newHeight + "px";
+								}
+							  
+								// Call resizeIframe initially
+								window.addEventListener("load", resizeIframe);
+							  
+								// Call resizeIframe whenever the window is resized
+								window.addEventListener("resize", function() {
+								  clearTimeout(this.resizeTimeout);
+								  this.resizeTimeout = setTimeout(resizeIframe, 200);
+								});
+							  </script>
+							  
+							  
+							  
+							  
+							  
+							  
 						</div>
 					</section>
 
