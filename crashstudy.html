@@ -60,17 +60,25 @@
           /></span>
           <p>
             As soon as I finished my IBM Data Analyst Professional Certificate I wanted to start some projects to learn and develop further
-            my skills. <br>So I thought, what's the thing I love even more than data? <br>Aviation.
+            my skills. 
+            <br>
+            So I thought, what's the thing I love even more than data? 
+            <br>
+            Aviation.
           </p>
           <p>
             I decided to start a small project on the history of the aviation accidents
-            and incidents.<br>
+            and incidents.
+            <br>
             This project involved web scraping using Python, data cleaning, analyzing and visualizing data using various libraries such as Pandas, Matplotlib, seaborn and a final interactive dashboard using powerBI
           </p>
           <h1>Obtaining the Data</h1>
           <p>
-            After a lot of research on a good data source, I came across <a href="https://www.planecrashinfo.com/">this website</a>.<br>
-            The website owner very kindly permitted me to scrape his page and to use the data any way I wanted. <br>Once again, a huge thank you, Richard Kebabjian!
+            After a lot of research on a good data source, I came across <a href="https://www.planecrashinfo.com/">this website</a>.
+            <br>
+            The website owner very kindly permitted me to scrape his page and to use the data any way I wanted. 
+            <br>
+            Once again, a huge thank you, Richard Kebabjian!
           </p>
           <h2>
             Scrapping the Main Data
@@ -92,18 +100,18 @@
             Before we start transforming and cleaning the data, here's a brief description of some columns:
           </p>
           <ul>
-            <li>Date:	 Date of accident,  in the format - January 01, 2001</li>
-            <li>Time:	 Local time, in 24 hr</li>
-            <li>Airline/Op:	 Airline or operator of the aircraft.</li>
-            <li>Flight #:	 Flight number assigned by the aircraft operator</li>
-            <li>Route:	 Complete or partial route flown prior to the accident</li>
-            <li>AC Type:	 Aircraft type</li>
-            <li>Reg:	 ICAO registration of the aircraft</li>
-            <li>cn / ln:	 Construction or serial number / Line or fuselage number</li>
-            <li>Aboard:	 Total aboard (passengers / crew)</li>
-            <li>Fatalities:	 Total fatalities aboard (passengers / crew)</li>
-            <li>Ground:	 Total killed on the ground</li>
-            <li>Summary:	 Brief description of the accident and cause if known </li>
+            <li><b>Date:</b>	 Date of accident,  in the format - January 01, 2001</li>
+            <li><b>Time:</b>	 Local time, in 24 hr</li>
+            <li><b>Airline/Op:</b>	 Airline or operator of the aircraft.</li>
+            <li><b>Flight #:</b>	 Flight number assigned by the aircraft operator</li>
+            <li><b>Route:</b>	 Complete or partial route flown prior to the accident</li>
+            <li><b>AC Type:</b>	 Aircraft type</li>
+            <li><b>Reg:</b>	 ICAO registration of the aircraft</li>
+            <li><b>cn / ln:</b>	 Construction or serial number / Line or fuselage number</li>
+            <li><b>Aboard:</b>	 Total aboard (passengers / crew)</li>
+            <li><b>Fatalities:</b>	 Total fatalities aboard (passengers / crew)</li>
+            <li><b>Ground:</b>	 Total killed on the ground</li>
+            <li><b>Summary:</b>	 Brief description of the accident and cause if known </li>
           </ul>
           <p>
             You guessed it, here's a not final Notebook
@@ -117,12 +125,35 @@
           </p>
           <ol>
             <li>How many total fatalities occurred, and how many accidents were recorded?</li>
-            <li>Has there been any observable trend in fatalities over time, particularly since the 1980s? Were there any significant spikes or notable events impacting the number of fatalities?</li>
-            <li>Which airplane models were involved in the highest number of accidents? Are there any significant differences between the top models and others?</li>
-            <li>Which manufacturers had the most airplanes involved in accidents? Are there any notable differences between them?</li>
-            <li>Among the operators, which ones had the highest number of accidents? Were there any patterns or notable differences between them?</li>
-            <li>In terms of known routes, which cities had the highest number of accidents originating from them?</li>
+            <li>Has there been any observable trend in fatalities over time, Were there any significant spikes or notable events impacting the number of fatalities?</li>
+            <li>Which airplane models were involved in the highest number of accidents?</li>
+            <li>Which manufacturers had the most airplanes involved in accidents?</li>
+            <li>Among the operators, which ones had the highest number of accidents?</li>
+            <li>In terms of known routes, which cities had the highest number of accidents originating from?</li>
           </ol>
+          <p>
+            Let's dive in?
+          </p>
+          <script src="https://gist.github.com/marxio09dio/f641048ccf92b17e3ac6ffbb9b0d4fab.js"></script>
+          <p>
+            After a quick analysis, we can finally answer the initial questions:
+          </p>
+          <ol>
+            <li>120398 Total Fatalities in 5043 Accidents</li>  
+            <li>From 1999, the tendency of Fatalities has been decreasing, however, due to the 09/11 attacks, there was a huge spike</li>
+            <li>"Douglas DC-3" is by far the Airplane involved in the most accidents totalizing 333, second we have the "de Havilland Canada DHC-6 Twin Otter 300" with 83</li>
+            <li>As for manufacturers "Douglas" aeroplanes were involved in 995 and "Boeing"'s 415</li>
+            <li>When it comes to operators, "Aeroflot" had 260 accidents and "U.S. Air Force" 141</li>
+            <li>For the Accidents where routes are known, 65 of the accidents originated from New York and the other 51 from Paris</li>
+          </ol>
+          <h1>
+            Interactive Dashboard
+          </h1>
+          <p>
+            With all the data cleaned, and prepared, its time for a <a href="https://powerbi.microsoft.com/en-us/desktop/">Power BI</a> dashboard
+            <br>
+            Everything is interactive and you can explore the data as you wish
+          </p>
           <div class="iframe-container">
             <iframe
               id="dynamic-iframe"
@@ -132,7 +163,23 @@
               allowfullscreen="true"
             ></iframe>
           </div>
-         
+          <p>
+          </p>
+          <p>
+            <i>Please note that the data used in this project is for educational and informational purposes only. The numbers and statistics presented are based on the dataset used and may not represent the complete picture of aviation accidents and incidents.</i>
+          </p>
+          <h4>
+          <p>
+            <a href="https://github.com/marxio09dio/Airplanes-Crashes-Study">Github Repo </a>
+          </p>
+        </h4>
+        <p>
+          While this project was an excelent learning experience, it is important to pay respect to all the victims and their families affected by these events. 
+          Unfortunately, most rules and regulations of aviation safety have been written with the tragic loss of lives.
+        </p>
+        <p>
+          <b>Blue Skies and Tailwinds!</b>
+        </p>
         </div>
       </section>
     </div>
