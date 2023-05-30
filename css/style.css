@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+a {
+    color: inherit;
+    text-decoration: inherit; /* no underline */
+    }
+    
 * {
     margin: 0;
     padding: 0;
@@ -589,4 +594,6 @@ body .gist .gist-data .pl-s .pl-s1 {
         text-align: left;
         font-size: 4.5rem;
     }
+
+
     /* <body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark" data-new-gr-c-s-check-loaded="14.1111.0" data-gr-ext-installed="" bis_status="ok" bis_frame_id="558"> */
