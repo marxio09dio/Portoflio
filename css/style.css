@@ -181,11 +181,6 @@ span {
     font-size: 4.5rem;
 }
 
-.subheading {
-    text-align: left;
-    font-size: 3.5rem;
-}
-
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
@@ -536,14 +531,12 @@ span {
     height: 100%;
   }
 
-  <style>
+
 /* https://github.com/lonekorean/gist-syntax-themes */
 @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css');
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-body {
-  font: 16px 'Open Sans', sans-serif;
-}
+
 body .gist .gist-file {
   border-color: #555 #555 #444
 }
@@ -560,7 +553,6 @@ body .gist .gist-meta a {
 body .gist .gist-data .pl-s .pl-s1 {
   color: #a5c261
 }
-</style>
 
 .image.fit {
     display: block;
@@ -571,3 +563,30 @@ body .gist .gist-data .pl-s .pl-s1 {
     .image.fit img {
         width: 100%;
     }
+
+    .inner>p {
+        font-size: 1.6rem;
+    }
+
+    .inner>h2 {
+        font-size: 2.5rem;
+    }
+
+    .inner>ul {
+        font-size: 1.6rem;
+    }
+
+    .inner>ol {
+        font-size: 1.6rem;
+    }
+
+    .prhead {
+        text-align: center;
+        font-size: 5.6rem;
+    }
+
+    .subheading {
+        text-align: left;
+        font-size: 4.5rem;
+    }
+    /* <body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark" data-new-gr-c-s-check-loaded="14.1111.0" data-gr-ext-installed="" bis_status="ok" bis_frame_id="558"> */
