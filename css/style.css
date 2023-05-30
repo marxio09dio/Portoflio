@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* https://github.com/lonekorean/gist-syntax-themes */
+@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 a {
     color: inherit;
@@ -225,6 +229,7 @@ span {
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    height: 23rem;
 }
 
 .services-container .services-box:hover {
@@ -377,7 +382,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text p {
@@ -537,10 +542,12 @@ span {
   }
 
 
-/* https://github.com/lonekorean/gist-syntax-themes */
-@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css');
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body .gist {
+        margin: 0 0 0.5em 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+} 
 
 body .gist .gist-file {
   border-color: #555 #555 #444
@@ -567,33 +574,52 @@ body .gist .gist-data .pl-s .pl-s1 {
 
     .image.fit img {
         width: 100%;
+        padding: 1.5em;
     }
 
     .inner>p {
         font-size: 1.6rem;
+        line-height: 2.0;
+        margin: 0 0 0.5em 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .inner>h2 {
         font-size: 2.5rem;
+        margin: 0 0 0.5em 0;
+        margin-top: 2rem;
     }
 
     .inner>ul {
         font-size: 1.6rem;
+        line-height: 2.0;
+        padding: 1.5em 1em;
+        
     }
 
     .inner>ol {
         font-size: 1.6rem;
+        line-height: 2.0;
+        padding: 1.5em 1em;
     }
 
     .prhead {
         text-align: center;
         font-size: 5.6rem;
+        padding: 0.5em;
     }
 
     .subheading {
         text-align: left;
         font-size: 4.5rem;
+        margin: 0 0 0.5em 0;
+        margin-top: 2rem;
+    
     }
 
-
+    a:hover {
+        border-bottom-color: transparent;
+        color: var(--main-color);
+    }
     /* <body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark" data-new-gr-c-s-check-loaded="14.1111.0" data-gr-ext-installed="" bis_status="ok" bis_frame_id="558"> */
