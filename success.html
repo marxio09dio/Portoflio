@@ -17,19 +17,12 @@
 <body>
 
     <!-- contact section design -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
         <h2 class="heading">Email <span>Sent!</span></h2>
-    </section>
-
-    
-
-    <!-- footer design -->
-
         <div class="footer-iconTop">
-            <a href="index.html"><i class='bx bx-up-arrow-alt'></i></a>
+            <input type="submit" value="Go Back" class="btn">
         </div>
-
-
+    </section>
 
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -38,7 +31,11 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- custom js -->
-    <script src="js/script.js"></script>
+    <script>
+        setTimeout(function() {
+            window.location.href = "index.html";
+        }, 3000); // Redirect after 3 seconds (3000 milliseconds)
+    </script>
 
 </body>
 
