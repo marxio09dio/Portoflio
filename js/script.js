@@ -59,3 +59,11 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+
+/*==================== email popup ====================*/
+
+function showPopup(event) {
+    event.preventDefault();
+    alert("Message sent!");
+}
